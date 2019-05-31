@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\caio_\\Desktop\\Avon\\AvonaleHUB\\Model\\Model.csproj",
+      "projectUniqueName": "C:\\Users\\caio_\\Desktop\\teste\\AvonaleHUB\\Model\\Model.csproj",
       "projectName": "Model",
-      "projectPath": "C:\\Users\\caio_\\Desktop\\Avon\\AvonaleHUB\\Model\\Model.csproj",
+      "projectPath": "C:\\Users\\caio_\\Desktop\\teste\\AvonaleHUB\\Model\\Model.csproj",
       "packagesPath": "C:\\Users\\caio_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\caio_\\Desktop\\Avon\\AvonaleHUB\\Model\\obj\\",
+      "outputPath": "C:\\Users\\caio_\\Desktop\\teste\\AvonaleHUB\\Model\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -769,11 +769,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\caio_\\Desktop\\Avon\\AvonaleHUB\\Negocio\\Negocio.csproj",
+      "projectUniqueName": "C:\\Users\\caio_\\Desktop\\teste\\AvonaleHUB\\Negocio\\Negocio.csproj",
       "projectName": "Negocio",
-      "projectPath": "C:\\Users\\caio_\\Desktop\\Avon\\AvonaleHUB\\Negocio\\Negocio.csproj",
+      "projectPath": "C:\\Users\\caio_\\Desktop\\teste\\AvonaleHUB\\Negocio\\Negocio.csproj",
       "packagesPath": "C:\\Users\\caio_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\caio_\\Desktop\\Avon\\AvonaleHUB\\Negocio\\obj\\",
+      "outputPath": "C:\\Users\\caio_\\Desktop\\teste\\AvonaleHUB\\Negocio\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -792,11 +792,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\caio_\\Desktop\\Avon\\AvonaleHUB\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\caio_\\Desktop\\Avon\\AvonaleHUB\\Model\\Model.csproj"
+            "C:\\Users\\caio_\\Desktop\\teste\\AvonaleHUB\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\caio_\\Desktop\\teste\\AvonaleHUB\\Model\\Model.csproj"
             },
-            "C:\\Users\\caio_\\Desktop\\Avon\\AvonaleHUB\\Persistencia\\Persistencia.csproj": {
-              "projectPath": "C:\\Users\\caio_\\Desktop\\Avon\\AvonaleHUB\\Persistencia\\Persistencia.csproj"
+            "C:\\Users\\caio_\\Desktop\\teste\\AvonaleHUB\\Persistencia\\Persistencia.csproj": {
+              "projectPath": "C:\\Users\\caio_\\Desktop\\teste\\AvonaleHUB\\Persistencia\\Persistencia.csproj"
             }
           }
         }
