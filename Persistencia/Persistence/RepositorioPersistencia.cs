@@ -15,14 +15,28 @@ namespace Persistencia.Persistence
             if (File.Exists("Repositorios.xml"))
             {
                 var xml = XDocument.Load("Repositorios.xml");
+                bool validacao = true;
+                List<Repositorio> Lista = GetFavoritos();
 
-                XElement root = new XElement("Repositorio",
-                                         new XAttribute("Id", repositorio.Id),
-                                         new XAttribute("name", repositorio.Name),
-                                         new XAttribute("language", repositorio.language));
+                foreach(Repositorio item in Lista)
+                {
+                    if(item.Id == repositorio.Id)
+                    {
+                        validacao = false;
+                    }
+                }
 
-                xml.Element("Repositorios").Add(root);
-                xml.Save("Repositorios.xml");
+                if (validacao)
+                {
+                    XElement root = new XElement("Repositorio",
+                         new XAttribute("Id", repositorio.Id),
+                         new XAttribute("name", repositorio.Name),
+                         new XAttribute("language", repositorio.language));
+
+                    xml.Element("Repositorios").Add(root);
+                    xml.Save("Repositorios.xml");
+                }
+
             }
             else
             {
