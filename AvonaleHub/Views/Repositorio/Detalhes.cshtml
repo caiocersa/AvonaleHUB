@@ -1,0 +1,71 @@
+﻿@model Model.Models.Repositorio
+
+@{
+    ViewData["Title"] = "Detalhes";
+    Layout = "~/Views/Shared/_LayoutAvonale.cshtml";
+}
+
+<div class="row mt-4 m-2">
+    <p class="h1 font-weight-bold">Detalhes do repositório</p>
+</div>
+
+
+<div class="shadow card row m-2" >
+    <div class="card-body nav-link font-avonale">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-lg-6">
+                <h6 class="card-subtitle" style="color:#009593">Nome:</h6>
+                <p class="card-title">@Html.DisplayFor(model => model.Name)</p>
+
+                <h6 class="card-subtitle" style="color:#009593">Descrição:</h6>
+                <p class="card-title text-justify">@Html.DisplayFor(model => model.description)</p>
+
+                <h6 class="card-subtitle" style="color:#009593">Linguagem:</h6>
+                <p class="card-title">@Html.DisplayFor(model => model.language)</p>
+
+                <h6 class="card-subtitle" style="color:#009593">Ultima Atualização:</h6>
+                <p class="card-title">@Html.DisplayFor(model => model.updated_at, "{0:dd/MM/yyyy}")</p>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-12 mx-auto text-center mt-2">
+                        <h6 class="card-subtitle" style="color:#009593">Dono:</h6>
+                    </div>
+                    <div class="col-12 text-center mt-2">
+                        <img class="img-thumbnail rounded-circle" width="60px" style="height: 60px !important" src="@Html.DisplayFor(model => model.owner.avatar_url)" />
+                        <br />
+                        <p class="card-title">@Html.DisplayFor(model => model.owner.login)</p>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h6 class="card-subtitle" style="color:#009593">Contribuidores:</h6>
+                    </div>
+                    <div class="col-12 text-center mt-2">
+                        <div class="row mx-auto text-center">
+                            @if (Model.contributors != null)
+                            {
+                                @foreach (Model.Models.Usuario contribuidor in Model.contributors)
+                                {
+                                    <div class="col-md-4 col-lg-4  text-center mt-2">
+                                        <img class="img-thumbnail rounded-circle" width="60px" style="height: 60px !important" src="@contribuidor.avatar_url" />
+                                        <br />
+                                        <p class="card-title">@contribuidor.login</p>
+                                    </div>
+                                }
+                            }
+
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                        <a class="btn btn-success" asp-action="AdicionarFavoritos" asp-route-id="@Model.Id">Adicionar Favoritos</a>
+                        <button class= "btn btn-info" onclick='history.go(-1)'>Voltar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

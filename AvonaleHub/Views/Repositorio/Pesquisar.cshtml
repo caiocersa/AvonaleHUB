@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewData["Title"] = "Pesquisar";
+    Layout = "~/Views/Shared/_LayoutAvonale.cshtml";
+}
+
+<div class="row mt-4 m-2">
+    <p class="h1 font-weight-bold">Pesquisar repositório</p>
+</div>
+
+<div class="m-2" name="pesquisar" method="post">
+
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" id="chave" placeholder="Insira nome do repositório" aria-label="Pesquisar repósitorio">
+        <div class="input-group-append">
+            <button class="btn btn-outline-success" type="button" onclick="RealizarBusca()">Pesquisar</button>
+        </div>
+    </div>
+</div>
+
+<div class="row card p-3 m-2 ">
+    <div class="table-responsive" id="repositorios">
+        <table class="table display responsive table-bordered" id="TabelaRepositorios">
+            <thead>
+            <th></th>
+            <th>Nome</th>
+            <th>Dono</th>
+            <th>Linguagem</th>
+            <th>Ultima Atualização</th>
+            </thead>
+
+            <tbody></tbody>
+        </table>
+    </div>
+
+</div>
+
+<script>
+
+    $(document).ready(function () {
+        Tabela();
+    });
+
+    function RealizarBusca() {
+
+        var chave = $('#chave').val();
+
+      $.ajax({
+          type: 'POST',
+          url: '@Url.Action("BuscarAjax", "Repositorio")', 
+          data: 'chave=' + chave,
+
+            beforeSend: function () {
+                //Animação carregando
+          },
+
+            success: function (html) {
+                $('#repositorios').html(html);
+                Tabela();
+            }
+      });
+
+    }
+
+</script>

@@ -1,0 +1,8 @@
+C:\Users\caio_\source\repos\AvonaleHub\Model\bin\Debug\netcoreapp2.1\Model.deps.json
+C:\Users\caio_\source\repos\AvonaleHub\Model\bin\Debug\netcoreapp2.1\Model.dll
+C:\Users\caio_\source\repos\AvonaleHub\Model\bin\Debug\netcoreapp2.1\Model.pdb
+C:\Users\caio_\source\repos\AvonaleHub\Model\obj\Debug\netcoreapp2.1\Model.csproj.CoreCompileInputs.cache
+C:\Users\caio_\source\repos\AvonaleHub\Model\obj\Debug\netcoreapp2.1\Model.AssemblyInfoInputs.cache
+C:\Users\caio_\source\repos\AvonaleHub\Model\obj\Debug\netcoreapp2.1\Model.AssemblyInfo.cs
+C:\Users\caio_\source\repos\AvonaleHub\Model\obj\Debug\netcoreapp2.1\Model.dll
+C:\Users\caio_\source\repos\AvonaleHub\Model\obj\Debug\netcoreapp2.1\Model.pdb

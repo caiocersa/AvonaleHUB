@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Model.Models.Repositorio>
+
+
+<table  class="table display responsive table-bordered" id="TabelaRepositorios">
+    <thead>
+    <th></th>
+    <th>Nome</th>
+    <th>Dono</th>
+    <th>Linguagem</th>
+    <th>Ultima Atualização</th>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td></td>
+                <td>
+                    <a asp-action="Detalhes" asp-route-id="@item.Id">
+                        @Html.DisplayFor(modelItem => item.Full_name)
+                    </a>
+
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.owner.login)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.language)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.updated_at)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

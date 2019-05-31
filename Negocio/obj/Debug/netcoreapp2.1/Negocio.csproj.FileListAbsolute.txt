@@ -1,0 +1,14 @@
+C:\Users\caio_\source\repos\AvonaleHub\Negocio\bin\Debug\netcoreapp2.1\Negocio.deps.json
+C:\Users\caio_\source\repos\AvonaleHub\Negocio\bin\Debug\netcoreapp2.1\Negocio.dll
+C:\Users\caio_\source\repos\AvonaleHub\Negocio\bin\Debug\netcoreapp2.1\Negocio.pdb
+C:\Users\caio_\source\repos\AvonaleHub\Negocio\bin\Debug\netcoreapp2.1\Model.dll
+C:\Users\caio_\source\repos\AvonaleHub\Negocio\bin\Debug\netcoreapp2.1\Persistencia.dll
+C:\Users\caio_\source\repos\AvonaleHub\Negocio\bin\Debug\netcoreapp2.1\Model.pdb
+C:\Users\caio_\source\repos\AvonaleHub\Negocio\bin\Debug\netcoreapp2.1\Persistencia.pdb
+C:\Users\caio_\source\repos\AvonaleHub\Negocio\obj\Debug\netcoreapp2.1\Negocio.csprojAssemblyReference.cache
+C:\Users\caio_\source\repos\AvonaleHub\Negocio\obj\Debug\netcoreapp2.1\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\caio_\source\repos\AvonaleHub\Negocio\obj\Debug\netcoreapp2.1\Negocio.AssemblyInfoInputs.cache
+C:\Users\caio_\source\repos\AvonaleHub\Negocio\obj\Debug\netcoreapp2.1\Negocio.AssemblyInfo.cs
+C:\Users\caio_\source\repos\AvonaleHub\Negocio\obj\Debug\netcoreapp2.1\Negocio.csproj.CopyComplete
+C:\Users\caio_\source\repos\AvonaleHub\Negocio\obj\Debug\netcoreapp2.1\Negocio.dll
+C:\Users\caio_\source\repos\AvonaleHub\Negocio\obj\Debug\netcoreapp2.1\Negocio.pdb

@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Model.Models.Repositorio>
+
+@{
+    ViewData["Title"] = "Favoritos";
+    Layout = "~/Views/Shared/_LayoutAvonale.cshtml";
+}
+
+<div class="row mt-4">
+    <p class="h1 font-weight-bold">Favoritos</p>
+</div>
+
+<div class="row mt-4">
+    @foreach (var item in Model)
+    {
+        <div class="shadow card ml-2 mb-2 " style="width: 18rem;">
+            <a class="card-body nav-link font-avonale" asp-action="Detalhes" asp-route-id="@item.Id">
+                <h6 class="card-subtitle" style="color:#009593">Repositório</h6>
+                <h5 class="card-title font-weight-bold" style="color:#009593">@item.Name</h5>
+            </a>
+            <div class="card-footer">
+                <h6 class="card-text mt-auto ">Linguagem: @item.language</h6>
+            </div>
+
+        </div>
+    }
+</div>
