@@ -14,8 +14,8 @@ namespace AvonaleHub.Controllers
 
         public IActionResult Index()
         {
-            List<Repositorio> Repositorios = gerenciadora.ObterMeusRepositorios();
-            return View(Repositorios);
+            List<Repositorio> repositorios = gerenciadora.ObterMeusRepositorios();
+            return View(repositorios);
         }
 
         public IActionResult Detalhes(int id)
@@ -44,8 +44,8 @@ namespace AvonaleHub.Controllers
 
         public IActionResult BuscarAjax(string chave)
         {
-            List<Repositorio> Repositorios = gerenciadora.PesquisarRepositorios(chave);
-            return PartialView(Repositorios);
+            List<Repositorio> repositorios = gerenciadora.PesquisarRepositorios(chave);
+            return PartialView(repositorios);
         }
     }
 }
